@@ -1,0 +1,230 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  font-size: 15px;
+  padding: 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  background-color: rgba(36, 32, 41, 0.918);
+  border-bottom: 1px solid rgba(172, 168, 168, 0.568);
+}
+
+.logo{
+  width: 80px;
+  border-radius: 50%;
+}
+
+header ul{
+  display: flex;
+  justify-items: right;
+}
+
+.fundoHeader li img{
+  width: 30px;
+}
+
+.fundoHeader li a{
+  color: white;
+  transition: 500ms;
+}
+
+.fundoHeader li a:hover{
+  color: blueviolet;
+}
+
+body{
+  background-color: rgb(22, 20, 20);
+  color: white;
+  box-sizing: content-box;
+  display: grid;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 100%;
+}
+
+.imgCentro img{
+  margin: 1px;
+  max-width: 390px;
+}
+
+.bloco2{
+  max-width: 450px;
+  margin: 1px;
+}
+
+.container h1{
+  font-size: 40px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container h5{
+  font-size: 20px;
+  color: #8a2be2;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.setaBaixo{
+  width: 30px;
+  cursor: pointer;
+  animation: blink 1s steps(5, start) infinite;
+
+}
+
+#animation{
+  transition: 300ms;
+}
+
+@keyframes blink{
+  to{
+    visibility: hidden;
+  }
+}
+
+.rotate{
+  transform: rotate(180deg);
+  transition: 300ms;
+}
+
+.active{
+  display: block !important;
+}
+
+#about{
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#about p{
+  text-align: left;
+  margin-top: 5px;
+  font-size: 1.0rem;
+  line-height: 1.5rem;
+  max-width: 600px;
+}
+
+#about p span{
+  background-color: rgb(84, 252, 84);
+  border: 2px solid transparent;  
+  cursor: default;
+  line-height: 3rem;
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 5px;
+  transition: .3s ease-in boder-color, .3s ease-in background-color;
+}
+
+.form{
+  width: 80%;
+  margin: 40px auto;
+}
+
+.form input{
+  width: 60%;
+  color: black;
+  text-align: center;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.form button{
+  width: 25%;
+  background: linear-gradient(to right, rgb(84, 252, 84) 50%, blueviolet 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 300ms ease-out;
+  border-radius: 0px 5px 5px 0px;
+  margin-top: 15px;
+  margin-left: -4px;
+}
+
+.form button:hover{
+  background-position: left bottom;
+  color: black;
+}
+
+footer{
+  display: flex;
+  justify-content:space-around;
+  padding: 20px;
+  margin-top: 25px;
+  background-color: blueviolet;
+  align-items: center;
+  max-width: 100%;
+}
+
+
+footer div img{
+  padding: 5px;
+  align-items: center;
+}
+
+.hiringCoders{
+  width: 130px;
+}
+
+.vtex{
+  width: 80px;
+}
+
+.gamaAcademy{
+  width: 125px;
+}
+
+@media only screen and (max-width: 480px){
+  .form{
+    width: 100%;
+  }
+
+  .form input{
+    width: 60%;
+  }
+
+  .form button{
+    width: 40%;
+  }
+  
+  
+  #about p{
+    max-width: 80%;
+    text-align: justify;
+  }
+
+  
+
+}
