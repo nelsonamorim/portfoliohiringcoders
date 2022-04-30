@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nelson Amorim</title>
+  </head>
+  <body>
+    <header class="fundoHeader">
+      <div>
+        <img class="logo" src="img/nelsonAmorimLogoFinal.gif" alt="" />
+      </div>
+      <ul>
+        <li>
+          <a target="_blank" href="https://github.com/nelsonamorim"
+            ><img src="img/github48.png" alt="" />GitHub</a
+          >
+        </li>
+        <li>
+          <a target="_blank" href="mailto:nelsonamorim.dev@gmail.com"
+            ><img src="img/gmail-32.png" alt="" /> Gmail</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/nelsonamorim-dev/"
+            ><img src="img/linkedin-48.png" alt="" /> Linkedin</a
+          >
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section class="container">
+        <div class="imgCentro">
+          <img src="img/astronautSuitPana.png" alt="" />
+        </div>
+
+        <div class="bloco2">
+          <div>
+            <h1>Nelson Amorim</h1>
+            <h5>Front-End Developer</h5>
+          </div>
+
+          <div onclick="displayAbout()" id="arrow">
+            <img
+              id="animation"
+              class="setaBaixo"
+              src="img/setaBaixo48Branco.png"
+              alt=""
+            />
+          </div>
+
+          <div style="display: none" id="about">
+            <p>Fala galera!</p>
+            <p>
+              Sou um desenvolvedor Front-End em início de carreira, tenho
+              conhecimentos em <span>HTML</span>, <span>CSS</span> e
+              <span>JS</span>. Atualmente estou participando do HiringCoders#3 e
+              esse é o meu primeiro projeto do desafio.
+            </p>
+          </div>
+
+          <div class="form">
+            <div>
+              <p>Deixe seu contato</p>
+            </div>
+            <form action="">
+              <input type="text" placeholder="seu melhor email :)" />
+              <button>enviar!</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Desenvoldido por Nelson Amorim &reg;</p>
+      <div>
+        <img class="hiringCoders" src="img/hiringcoders-removebg.png" alt="" />
+        <img class="vtex" src="img/VTEX_Logo.svg.png" alt="" />
+        <img class="gamaAcademy" src="img/gama-academy.png" alt="" />
+      </div>
+    </footer>
+
+    <script>
+      function displayAbout() {
+        var arrow = document.getElementById('animation')
+        arrow.classList.toggle('rotate')
+        var display = document.getElementById('about')
+        display.classList.toggle('active')
+      }
+    </script>
+  </body>
+</html>
